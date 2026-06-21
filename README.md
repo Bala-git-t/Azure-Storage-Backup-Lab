@@ -86,7 +86,8 @@ RG-Storage-Backup-Lab
 
 ### Screenshot
 
-![Resource Group](resource-group.png)
+
+<img width="1915" height="876" alt="image" src="https://github.com/user-attachments/assets/02c8627a-2b49-4b5c-9009-985c2c3e943d" />
 
 ---
 
@@ -109,7 +110,8 @@ Provides the foundation for Azure storage services such as Blob Storage and Azur
 
 ### Screenshot
 
-![Storage Account](storage-account.png)
+<img width="1918" height="875" alt="image" src="https://github.com/user-attachments/assets/1c7503ee-6dea-449d-8d3d-ef20400f3e92" />
+
 
 ---
 
@@ -132,7 +134,7 @@ Blob Storage is used to store unstructured data such as documents, reports, imag
 
 ### Screenshot
 
-![Blob Container](blob-container.png)
+<img width="1918" height="900" alt="image" src="https://github.com/user-attachments/assets/ed742bfb-8d66-4d58-810c-e9a2e6cdcdd9" />
 
 ---
 
@@ -154,7 +156,8 @@ Azure File Share provides centralized shared storage accessible by multiple syst
 
 ### Screenshot
 
-![Azure File Share](file-share.png)
+<img width="1918" height="872" alt="image" src="https://github.com/user-attachments/assets/1faee82c-c1ca-4742-b5b7-54395256a2a9" />
+
 
 ---
 
@@ -172,7 +175,8 @@ Acts as the centralized management service for Azure Backup and recovery operati
 
 ### Screenshot
 
-![Recovery Services Vault](recovery-vault.png)
+<img width="1915" height="880" alt="image" src="https://github.com/user-attachments/assets/2da2e735-f18f-4b53-9007-ed1bb1a7f576" />
+
 
 ---
 
@@ -194,7 +198,8 @@ Protects workloads against accidental deletion, corruption, and infrastructure f
 
 ### Screenshot
 
-![Backup Configuration](backup-configuration.png)
+![Uploading image.png…]()
+
 
 ---
 
@@ -213,7 +218,7 @@ Created the first recovery point for disaster recovery and restoration purposes.
 
 ### Screenshot
 
-![Backup Completed](backup-completed.png)
+<img width="1918" height="877" alt="image" src="https://github.com/user-attachments/assets/029ac904-c048-452f-b73d-b0fb0e1ea46a" />
 
 ---
 
