@@ -34,8 +34,10 @@ As an Azure Administrator, the goal was to implement Azure Storage services and 
 
 Resource Group
 │
+
 ├── Storage Account (balastorage001)
-│
+
+
 ├── Blob Container (projectdata)
 │ ├── invoice-report.txt
 │ └── application-log.txt
