@@ -198,8 +198,7 @@ Protects workloads against accidental deletion, corruption, and infrastructure f
 
 ### Screenshot
 
-![Uploading image.png…]()
-
+<img width="1918" height="893" alt="image" src="https://github.com/user-attachments/assets/4076b18a-2787-495c-b85b-e808e1ff52f0" />
 
 ---
 
