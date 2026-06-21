@@ -35,18 +35,23 @@ As an Azure Administrator, the goal was to implement Azure Storage services and 
 Resource Group
 
 RG-Storage-Backup-Lab
+
 │
 ├── Storage Account (balastorage001)
 │
+
 ├── Blob Container (projectdata)
 │   ├── invoice-report.txt
 │   └── application-log.txt
+
 │
 ├── Azure File Share (sharedfiles)
 │   └── invoice-report.txt
+
 │
 ├── Recovery Services Vault
 │   └── CompanyBackupVault
+
 │
 └── Virtual Machine
     └── BackupTestVM-1
