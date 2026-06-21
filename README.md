@@ -6,7 +6,7 @@ This project demonstrates the implementation of Azure Storage and Backup service
 
 ## Business Scenario
 
-ABC Retail Solutions recently migrated its infrastructure to Microsoft Azure. The company stores important business documents, sales reports, application logs, and customer-related information.
+ABC Retail Solutions recently migrated its infrastructure to Microsoft Azure. The company stores important business documents, sales reports, application logs, and customer-related information
 
 The organization faced the following challenges:
 
