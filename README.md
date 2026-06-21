@@ -4,16 +4,18 @@
 
 This project demonstrates the implementation of Azure Storage and Backup services using Microsoft Azure. The objective was to design a secure cloud storage solution and implement backup protection for Azure Virtual Machines to ensure business continuity and disaster recovery readiness.
 
+---
+
 ## Business Scenario
 
-ABC Retail Solutions recently migrated its infrastructure to Microsoft Azure. The company stores important business documents, sales reports, application logs, and customer-related information
+ABC Retail Solutions recently migrated its infrastructure to Microsoft Azure. The company stores important business documents, sales reports, application logs, and customer-related information.
 
 The organization faced the following challenges:
 
-* No centralized cloud storage.
-* Risk of accidental file deletion.
-* No backup strategy for virtual machines.
-* Potential business disruption during server failures.
+* No centralized cloud storage
+* Risk of accidental file deletion
+* No backup strategy for virtual machines
+* Potential business disruption during server failures
 
 As an Azure Administrator, the goal was to implement Azure Storage services and configure Azure Backup to protect critical workloads.
 
@@ -21,19 +23,18 @@ As an Azure Administrator, the goal was to implement Azure Storage services and 
 
 ## Project Objectives
 
-* Create and manage Azure Storage Account.
-* Implement Blob Storage for unstructured data.
-* Implement Azure File Share for shared file storage.
-* Configure Recovery Services Vault.
-* Protect Azure Virtual Machines using Azure Backup.
-* Create recovery points for disaster recovery.
+* Create and manage Azure Storage Account
+* Implement Blob Storage for unstructured data
+* Implement Azure File Share for shared file storage
+* Configure Recovery Services Vault
+* Protect Azure Virtual Machines using Azure Backup
+* Create recovery points for disaster recovery
 
 ---
 
 ## Architecture
 
-Resource Group
-
+```text
 RG-Storage-Backup-Lab
 │
 ├── Storage Account (balastorage001)
@@ -51,6 +52,8 @@ RG-Storage-Backup-Lab
 └── Virtual Machine
     └── BackupTestVM-1
 ```
+
+---
 
 ## Technologies Used
 
@@ -70,18 +73,20 @@ RG-Storage-Backup-Lab
 
 Created a Resource Group to organize and manage all resources related to the Storage and Backup project.
 
-Resource Group:
+**Resource Group:**
 
 RG-Storage-Backup-Lab
 
-Purpose:
+**Purpose:**
 
-* Centralized resource management.
-* Cost tracking.
-* Access control.
-* Simplified administration.
-  
-<img width="1918" height="891" alt="image" src="https://github.com/user-attachments/assets/d9d9a29e-feb9-4210-ae78-d432138e2b9d" />
+* Centralized resource management
+* Cost tracking
+* Access control
+* Simplified administration
+
+### Screenshot
+
+![Resource Group](resource-group.png)
 
 ---
 
@@ -89,40 +94,45 @@ Purpose:
 
 Created an Azure Storage Account.
 
-Storage Account:
+**Storage Account:**
 
 balastorage001
 
-Configuration:
+**Configuration:**
 
 * Performance: Standard
 * Redundancy: LRS (Locally Redundant Storage)
 
-Purpose:
+**Purpose:**
 
 Provides the foundation for Azure storage services such as Blob Storage and Azure File Shares.
 
-<img width="1918" height="883" alt="image" src="https://github.com/user-attachments/assets/f44c277b-94e7-414d-aed5-64b66cae12f1" />
+### Screenshot
 
+![Storage Account](storage-account.png)
+
+---
 
 ### Step 3: Blob Storage Configuration
 
 Created a Blob Container.
 
-Container Name:
+**Container Name:**
 
 projectdata
 
-Uploaded Files:
+**Uploaded Files:**
 
 * invoice-report.txt
 * application-log.txt
 
-Purpose:
+**Purpose:**
 
 Blob Storage is used to store unstructured data such as documents, reports, images, logs, and backup files.
 
-<img width="1918" height="887" alt="image" src="https://github.com/user-attachments/assets/85739972-b7e8-4695-86f0-d73c9c09ecf6" />
+### Screenshot
+
+![Blob Container](blob-container.png)
 
 ---
 
@@ -130,19 +140,21 @@ Blob Storage is used to store unstructured data such as documents, reports, imag
 
 Created an Azure File Share.
 
-File Share Name:
+**File Share Name:**
 
 sharedfiles
 
-Uploaded File:
+**Uploaded File:**
 
 * invoice-report.txt
 
-Purpose:
+**Purpose:**
 
 Azure File Share provides centralized shared storage accessible by multiple systems and users.
 
-<img width="1917" height="887" alt="image" src="https://github.com/user-attachments/assets/71079a74-7c77-443e-933d-a7ef6f566d35" />
+### Screenshot
+
+![Azure File Share](file-share.png)
 
 ---
 
@@ -150,15 +162,17 @@ Azure File Share provides centralized shared storage accessible by multiple syst
 
 Created a Recovery Services Vault.
 
-Vault Name:
+**Vault Name:**
 
 CompanyBackupVault
 
-Purpose:
+**Purpose:**
 
 Acts as the centralized management service for Azure Backup and recovery operations.
 
-<img width="1918" height="891" alt="image" src="https://github.com/user-attachments/assets/6d9e4539-7fd4-4615-8c71-534039faffca" />
+### Screenshot
+
+![Recovery Services Vault](recovery-vault.png)
 
 ---
 
@@ -166,18 +180,21 @@ Acts as the centralized management service for Azure Backup and recovery operati
 
 Created and protected the following VM:
 
-BackupTestVM-1
+**BackupTestVM-1**
 
-Backup Configuration:
+**Backup Configuration:**
 
 * Azure Virtual Machine Backup
 * Backup Policy Applied
 * Protection Enabled
 
-Purpose:
+**Purpose:**
 
 Protects workloads against accidental deletion, corruption, and infrastructure failures.
-<img width="1918" height="892" alt="image" src="https://github.com/user-attachments/assets/dfa0b995-28c2-46f8-8cd5-334563e94da5" />
+
+### Screenshot
+
+![Backup Configuration](backup-configuration.png)
 
 ---
 
@@ -185,15 +202,18 @@ Protects workloads against accidental deletion, corruption, and infrastructure f
 
 Performed the first backup operation.
 
-Backup Status:
+**Backup Status:**
 
 * Configure Backup: Completed
 * Backup: Completed
 
-Purpose:
+**Purpose:**
 
 Created the first recovery point for disaster recovery and restoration purposes.
-<img width="1918" height="880" alt="image" src="https://github.com/user-attachments/assets/c04e591d-cf6e-4aa9-b437-8561f9659a91" />
+
+### Screenshot
+
+![Backup Completed](backup-completed.png)
 
 ---
 
@@ -225,13 +245,13 @@ Successfully verified:
 
 Through this project, I gained hands-on experience with:
 
-* Azure Storage Account management.
-* Blob Storage implementation.
-* Azure File Share management.
-* Recovery Services Vault configuration.
-* Azure Backup operations.
-* Virtual Machine protection and recovery concepts.
-* Disaster Recovery fundamentals in Microsoft Azure.
+* Azure Storage Account management
+* Blob Storage implementation
+* Azure File Share management
+* Recovery Services Vault configuration
+* Azure Backup operations
+* Virtual Machine protection and recovery concepts
+* Disaster Recovery fundamentals in Microsoft Azure
 
 ---
 
